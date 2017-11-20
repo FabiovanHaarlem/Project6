@@ -21,6 +21,6 @@ public class UnitSelectManager : MonoBehaviour
 
     public void SetUIElements()
     {
-        Vector3 mousePosition = 
+        
     }
 }
