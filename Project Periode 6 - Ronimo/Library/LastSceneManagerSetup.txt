@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Kyle/Testing.unity
+- path: Assets/Scenes/Fabio/FabioScene.unity
   isLoaded: 1
   isActive: 1
