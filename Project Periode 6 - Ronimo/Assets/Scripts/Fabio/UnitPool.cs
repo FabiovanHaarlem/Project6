@@ -9,6 +9,8 @@ public class UnitPool : MonoBehaviour
 	
 	void Start ()
     {
+        m_AmountOfUnits = 4;
+        m_UnitPool = new List<GameObject>();
         GetAllUnitPrefabs();
 	}
 
@@ -16,10 +18,11 @@ public class UnitPool : MonoBehaviour
     {
         for (int i = 0; i < m_AmountOfUnits; i++)
         {
-            m_UnitPool.Add(Instantiate(Resources.Load<GameObject>("Prefabs/CollecterUnitTest")));
-            m_UnitPool.Add(Instantiate(Resources.Load<GameObject>("Prefabs/MeleeUnitTest")));
-            m_UnitPool.Add(Instantiate(Resources.Load<GameObject>("Prefabs/RangedUnitTest")));
-            m_UnitPool.Add(Instantiate(Resources.Load<GameObject>("Prefabs/SpellCasterUnitTest")));
+            m_UnitPool.Add(Instantiate(Resources.Load<GameObject>("Prefabs/TestUnits/CollectorUnitTest")));
+            m_UnitPool.Add(Instantiate(Resources.Load<GameObject>("Prefabs/TestUnits/MeleeUnitTest")));
+            m_UnitPool.Add(Instantiate(Resources.Load<GameObject>("Prefabs/TestUnits/RangedUnitTest")));
+            m_UnitPool.Add(Instantiate(Resources.Load<GameObject>("Prefabs/TestUnits/SpellCasterUnitTest")));
+            m_UnitPool.Add(Instantiate(Resources.Load<GameObject>("Prefabs/TestUnits/SpecialUnitTest")));
         }
 
         for (int i = 0; i < m_UnitPool.Count; i++)
@@ -30,7 +33,7 @@ public class UnitPool : MonoBehaviour
 
     public GameObject GetSelectedUnit(string unitName)
     {
-        GameObject unit = null; ;
+        GameObject unit = null;
 
         for (int i = 0; i < m_UnitPool.Count; i++)
         {
