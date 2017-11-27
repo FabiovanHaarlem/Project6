@@ -1,8 +1,0 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Fabio/FabioScene.unity
-=======
-- path: Assets/Scenes/Kyle/KyleMain.unity
->>>>>>> origin/Kyle
-  isLoaded: 1
-  isActive: 1
